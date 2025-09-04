@@ -580,3 +580,360 @@
 // console.log(genres);
 
 
+//==================filter()
+
+
+// const values = [51, -3, 27, 21, -68, 42, -37];
+
+// const positiveValues = values.filter(value => value >= 0);
+// console.log(positiveValues);
+
+// const negativeValues = values.filter(value => value < 0);
+//  console.log(negativeValues);
+ 
+// const bigValues = values.filter(value => value > 1000);
+// console.log(bigValues);
+
+// console.log(values);
+
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+// console.log(evenNumbers);
+
+// const oddNumbers = numbers.filter(number => number % 2 !== 0);
+// console.log(oddNumbers);
+
+// const LOW_SCORE = 50;
+// const HIGH_SCORE = 80;
+// const students = [
+//   { name: "Mango", score: 83 },
+//   { name: "Poly", score: 59 },
+//   { name: "Ajax", score: 37 },
+//   { name: "Kiwi", score: 94 },
+//   { name: "Houston", score: 64 },
+// ];
+
+// const best = students.filter(student => student.score >= HIGH_SCORE);
+// console.log(best);
+
+// const worst = students.filter(student => student.score < LOW_SCORE);
+// console.log(worst);
+
+// const average = students.filter(student => student.score >= LOW_SCORE && student.score < HIGH_SCORE);
+// console.log(average);
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Tell-Tale Heart",
+//     author: "Edgar Allan Poe",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+
+// const MIN_RATING = 8;
+// const AUTHOR = "Bernard Cornwell";
+
+// const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
+// console.log(topRatedBooks);
+
+// const booksByAuthor = books.filter(book => book.author === AUTHOR);
+// console.log(booksByAuthor);
+
+// const users =
+// [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//   },
+// ];
+
+// const getUsersWithEyeColor = (users, color) => {
+//   return  users.filter(user => user.eyeColor === color );
+// }
+
+// console.log(getUsersWithEyeColor(users, "green"));
+
+
+//=====================find()
+
+// const colorPickerOptions = [
+//   { label: "red", color: "#F44336" },
+//   { label: "green", color: "#4CAF50" },
+//   { label: "blue", color: "#2196F3" },
+//   { label: "pink", color: "#E91E63" },
+//   { label: "indigo", color: "#3F51B5" },
+// ];
+
+// const color = colorPickerOptions.find((option) => option.label === "blue");
+// console.log(color);
+// console.log(colorPickerOptions);
+
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//   },
+// ];
+
+// const getUserWithEmail = (users, email) => {
+//   return users.find((user) => user.email === email);
+// };
+
+// console.log(getUserWithEmail(users, "elmahead@omatom.com"));
+
+
+
+//=========================every,some,reduce
+
+// const products = [
+//   { name: "apple", quantity: 2 },
+//   { name: "orange", quantity: 5 },
+//   { name: "plum", quantity: 0 },
+// ];
+
+// const hasEveryProduct = products.every(product => product.quantity > 0);
+
+// console.log(hasEveryProduct);
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+
+// const totalPlayTime = playtimes.reduce((previousValue, player) => {
+//     return previousValue + player;
+// },0);
+// console.log(totalPlayTime);
+
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// console.log(averagePlayTime);
+
+// const students = [
+//   { name: "Mango", score: 83 },
+//   { name: "Poly", score: 59 },
+//   { name: "Ajax", score: 37 },
+//   { name: "Kiwi", score: 94 },
+//   { name: "Houston", score: 64 },
+// ];
+
+// const totalScore = students.reduce((total, student) => {
+//     return total + student.score;
+// }, 0);
+
+// const averageScore = totalScore / students.length;
+// console.log(totalScore);
+
+// console.log(Math.round(averageScore));
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// const acc = 0;
+// const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
+//     return acc + player.playtime / player.gamesPlayed;
+// }, 0);
+
+// console.log(totalAveragePlaytimePerGame);
+
+// const students = [
+//   { name: "Mango", score: 83, courses: ["mathematics", "physics"] },
+//   { name: "Poly", score: 59, courses: ["science", "mathematics"] },
+//   { name: "Ajax", score: 37, courses: ["physics", "biology"] },
+//   { name: "Kiwi", score: 94, courses: ["literature", "science"] },
+// ];
+
+// const sortedByAscendingScore = students.toSorted((a, b) => a.score - b.score);
+// const names = sortedByAscendingScore.map(student => student.name);
+// console.log(names);
+
+// const names = students.toSorted((a, b) => a.score - b.score).map(student => student.name);
+// console.log(names);
+
+// const uniqueSortedCourses = students
+//     .flatMap(student => student.courses)
+//     .filter((course, index, array) => array.indexOf(course) === index)
+//     .toSorted((a, b) => a.localeCompare(b));
+// console.log(uniqueSortedCourses);
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Tell-Tale Heart",
+//     author: "Edgar Allan Poe",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+
+// const names = books.filter(value => value.rating > MIN_BOOK_RATING)
+//     .map(book => book.author)
+//     .toSorted((a, b) => a.localeCompare(b));
+// console.log(names);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
