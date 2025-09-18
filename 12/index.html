@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <ul>
-        <li>
-          <a href="./07-transactions.html">Майстерня: таблиця транзакцій</a>
-        </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transactions</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <p><a href="./index.html">Go back</a></p>
+
+    <button type="button" id="magic-btn" class="magic-btn js-magic-btn">
+      Magic button <span class="icon">🧙</span>
+    </button>
+
+    <ul class="site-nav"><li class="site-nav__item">
+        <a href="/about" class="site-nav__link">About</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="/portfolio" class="site-nav__link">Portfolio</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="/contacts" class="site-nav__link">Contacts</a>
+      </li>
     </ul>
+    <section class="hero">
+      <h1 class="hero__title">About me</h1>
+      <img
+        class="hero__img"
+        src="./img/imagescat.jpg"
+        alt="It`s me"
+        width="320"
+      />
+    </section>
+
+    <hr />
+
+    <div class="actions">
+      <button class="btn-actions" type="button" data-actions="add">Create</button
+      ><button class="btn-actions" type="button" data-actions="remove">Delete</button
+      ><button class="btn-actions" type="button" data-actions="edit">Edit</button>
+    </div>
+
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
